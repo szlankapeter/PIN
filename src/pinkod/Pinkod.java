@@ -7,6 +7,7 @@ public class Pinkod {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        pinFal();
         bekerPIN();
     }
 
@@ -37,4 +38,19 @@ public class Pinkod {
             System.out.println("Sikeres belépés");
     }
 
+    private static void pinFal(){
+        
+        int[] lista = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        for(int i=0;i<lista.length;i++){
+            if(i%3==0){
+                System.out.println("");
+            }
+            System.out.print(lista[i] + " ");
+        }
+        
+        System.out.println("");
+        
+    }
+    
+    
 }
